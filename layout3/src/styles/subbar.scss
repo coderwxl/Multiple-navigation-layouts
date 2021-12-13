@@ -1,0 +1,46 @@
+@import './variables.scss';
+
+.sub-nav {
+    // margin-left: $sideBarWidth;
+    width: 100%;
+    // background-color: #304156;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    z-index: 999;
+    overflow: hidden;
+    position: fixed;
+    top: $topBarHeight;
+    left: $sideBarWidth;
+    height: $subBarHeight !important;
+    background-color: white;
+
+    .el-menu {
+      float: left;
+      border: none!important;
+      // background-color: #304156;
+
+      .nav-item {
+        display: inline-block;
+        height: 100%; 
+        .el-menu-item {
+          box-sizing: border-box;
+          // color: rgb(191, 203, 217);
+          height: $subBarHeight;
+          // display: flex;
+          // align-items: center;
+          line-height: $subBarHeight; 
+          &:hover {
+            // background-color: $subMenuHover !important;
+          }
+          &:focus {
+            // background-color: $subMenuHover !important;
+            // color: $subMenuActiveText !important;
+          }
+        }
+        .is-active {
+          border-bottom: 2px solid $menuActiveText !important;
+        }
+      }
+    }
+  }
