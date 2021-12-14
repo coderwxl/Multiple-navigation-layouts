@@ -3,8 +3,7 @@ import Cookies from 'js-cookie'
 const state = {
   sidebar: {
     opened: Cookies.get('sidebarStatus') ? !!+Cookies.get('sidebarStatus') : true,
-    withoutAnimation: false,
-    hide: false
+    withoutAnimation: false
   },
   device: 'desktop'
 }
@@ -26,16 +25,10 @@ const mutations = {
   },
   TOGGLE_DEVICE: (state, device) => {
     state.device = device
-  },
-  SET_SIDEBAR_HIDE: (state, status) => {
-    state.sidebar.hide = status
   }
 }
 
 const actions = {
-  toggleSideBarHide({ commit }, status) {
-    commit('SET_SIDEBAR_HIDE', status)
-  },
   toggleSideBar({ commit }) {
     commit('TOGGLE_SIDEBAR')
   },
