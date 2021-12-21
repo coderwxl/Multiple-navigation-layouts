@@ -1,5 +1,6 @@
 # Multiple-navigation-layouts
-三种不同的导航布局页面，基于PanJiaChen/vue-admin-template，开箱即用。
+三种不同的导航布局页面，基于PanJiaChen/vue-admin-template，开箱即用。  
+推荐layout3
 
 layout1: 左侧是导航树，支持无限级路由
 ![image](https://user-images.githubusercontent.com/57793691/145940622-1fe4b091-22d4-4237-b7ef-b2c19286f3d2.png)
